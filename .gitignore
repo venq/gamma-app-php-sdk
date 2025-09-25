@@ -1,0 +1,8 @@
+/vendor/
+/.idea/
+/.vscode/
+/.phpunit.result.cache
+/phpunit.xml.cache
+/coverage/
+composer.lock
+build/

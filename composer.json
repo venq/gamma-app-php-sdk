@@ -1,0 +1,39 @@
+{
+  "name": "venq/gamma-app-php-sdk",
+  "description": "Unofficial PHP 8.4 SDK for Gamma Generate API v0.2",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/venq/gamma-app-php-sdk",
+  "support": {
+    "issues": "https://github.com/venq/gamma-app-php-sdk/issues"
+  },
+  "require": {
+    "php": "^8.4",
+    "psr/http-client": "^1.0",
+    "psr/http-message": "^1.1",
+    "psr/log": "^3.0",
+    "guzzlehttp/guzzle": "^7.9 || ^8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0",
+    "phpstan/phpstan": "^1.11"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gamma\\SDK\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gamma\\SDK\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "lint": "php -l src",
+    "test": "phpunit --coverage-text",
+    "stan": "phpstan analyse --level=max"
+  }
+}
