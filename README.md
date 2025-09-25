@@ -86,6 +86,11 @@ HTTP errors are mapped to domain-specific exceptions:
 
 Gamma is currently in beta and enforces workspace-level limits (50 generations per user per day). Request elevated access through [Gamma Generate API docs](https://developers.gamma.app/docs/get-access).
 
+## Documentation
+
+- [Usage guide (EN)](docs/usage.en.md)
+- [Usage guide (RU)](docs/usage.ru.md)
+
 ## Examples
 
 See the `/examples` directory for ready-to-run scripts:
