@@ -26,6 +26,7 @@ use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
+
 use function assert;
 use function ctype_digit;
 use function is_array;
@@ -466,11 +467,3 @@ final class GammaClient
         return $exportUrls;
     }
 }
-
-
-
-
-
-
-
-

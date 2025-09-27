@@ -6,6 +6,7 @@ namespace Gamma\SDK\Tests\Support;
 
 use InvalidArgumentException;
 use Psr\Log\AbstractLogger;
+
 use function sprintf;
 
 final class ArrayLogger extends AbstractLogger

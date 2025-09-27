@@ -17,7 +17,7 @@ final class Psr18ClientTest extends TestCase
     public function testDelegatesToProvidedClient(): void
     {
         $expected = new Response(200);
-        $inner = new class($expected) implements PsrClientInterface {
+        $inner = new class ($expected) implements PsrClientInterface {
             public function __construct(private readonly ResponseInterface $response)
             {
             }

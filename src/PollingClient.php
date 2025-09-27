@@ -12,6 +12,7 @@ use Gamma\SDK\Exceptions\TooManyRequestsException;
 use InvalidArgumentException;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
+
 use function ceil;
 use function max;
 use function microtime;
@@ -85,4 +86,3 @@ final class PollingClient
         }
     }
 }
-

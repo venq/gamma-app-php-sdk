@@ -46,7 +46,7 @@ final class FakeHttpClient implements ClientInterface
                 throw $item;
             }
 
-            throw new class($item) extends RuntimeException implements ClientExceptionInterface {
+            throw new class ($item) extends RuntimeException implements ClientExceptionInterface {
                 public function __construct(private readonly Throwable $previousThrowable)
                 {
                     parent::__construct($previousThrowable->getMessage(), 0, $previousThrowable);
