@@ -32,7 +32,7 @@
     "sort-packages": true
   },
   "scripts": {
-    "lint": "php -l src",
+    "lint": "for /r src %f in (*.php) do php -l %f",
     "test": "phpunit --coverage-text",
     "stan": "phpstan analyse --level=max"
   }
